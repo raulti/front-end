@@ -5,7 +5,8 @@ import { ContatoResolve } from '../../shared/resolve/contato.resolve';
 
 const routes: Routes = [
     {
-        path: '', component: FormComponent
+        path: '', component: FormComponent,
+        
     }
 ];
 

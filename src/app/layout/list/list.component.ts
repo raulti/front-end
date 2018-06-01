@@ -42,6 +42,7 @@ export class ListComponent implements OnInit {
     excluir(id) {
         this._layoutService.excluir(id).subscribe(data => {
             alert('Registro inativao com sucesso');
+            this.getContatos();
         }, error => {
             alert(error);
         });

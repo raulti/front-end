@@ -18,9 +18,10 @@
                         <thead>
                             <tr>
                                 <th>Nome</th>
-                                <th>telefone</th>
-                                <th>celular</th>
-                                <th>email</th>
+                                <th>Nascimento</th>
+                                <th>CPF</th>
+                                <th>Celular</th>
+                                <th>Email</th>
                                 <th>Ação</th>
                             </tr>
                         </thead>
@@ -28,14 +29,15 @@
 
                             <tr *ngFor="let contato of contatos">
                                 <td>{{contato.nome}}</td>
-                                <td>{{contato.telefone}}</td>
+                                <td>{{contato.dt_nascimento}}</td>
+                                <td>{{contato.cpf}}</td>
                                 <td>{{contato.celular}}</td>
                                 <td>{{contato.email}}</td>
                                 <td>
                                     <div class="row">
                                         <button type="button" class="btn bg-none btn-circle"><i class="fa fa-list"></i></button>
                                         <button type="button" class="btn bg-none btn-circle"><i class="fa fa-edit"></i></button>
-                                        <button type="button" (click)="excluir({{contato.id}})" class="btn bg-none btn-circle"><i class="fa fa-times"></i></button>
+                                        <button type="button" (click)="excluir(contato.id)" class="btn bg-none btn-circle"><i class="fa fa-times"></i></button>
                                      </div>
                                 </td>
                             </tr>
