@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FormComponent } from './form.component';
-import { ContatoResolve } from '../../shared/resolve/contato.resolve';
+import { ListComponent } from './list.component';
 
 const routes: Routes = [
     {
-        path: '', component: FormComponent
+        path: '', component: ListComponent
     }
 ];
 
@@ -13,5 +12,5 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class FormRoutingModule {
+export class ListRoutingModule {
 }
